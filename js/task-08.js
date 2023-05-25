@@ -9,6 +9,7 @@ form.main.addEventListener('submit', e => {
     e.preventDefault();
     if (!form.pass.value || !form.email.value) {
         alert('Please write your email and password')
+        return;
     }
     const people = {
         email: form.email.value,
